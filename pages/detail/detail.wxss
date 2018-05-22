@@ -1,0 +1,46 @@
+.contain-wraper{
+  display: flex;
+  flex-direction: column;
+}
+.hoster{
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+  width: 100%;
+  height: 1000rpx;
+  justify-content: center;
+  display: flex;
+}
+.hoster image{
+  height: 100%;
+  width: 80%;
+}
+.desc{
+  display: flex;
+  flex-direction: column;
+  padding-left: 70rpx;
+  padding-right: 70rpx;
+}
+.desc .title{
+  color: #333;
+  font-size: 40rpx;
+  text-align: center;
+}
+.text{
+  color: #666;
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+}
+.summary{
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.summary-title{
+  color: #333;
+  font-size: 30rpx;
+}
+.summary-subtitle{
+  color: #666;
+  font-size: 26rpx;
+  padding: 10rpx;
+}

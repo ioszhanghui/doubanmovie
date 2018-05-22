@@ -1,0 +1,13 @@
+<scroll-view class='contain-wraper'>
+<view class='hoster'><image src='{{detail.images.large}}'></image></view>
+<view class='desc'>
+    <text class='title'>{{detail.title}}</text>
+    <text class='rating text'>评分: {{detail.rating.average}}</text>
+    <text class='director text' wx:for="{{detail.directors}}">导演:<text>{{item.name}}</text></text>
+    <text class='main-actor text'>主演: <text  wx:for="{{detail.casts}}">{{item.name}}</text></text>
+</view>
+<view class='summary'> 
+  <text class='summary-title'>摘要</text>
+  <text class='summary-subtitle'>{{summary}}</text>
+</view>
+</scroll-view>
