@@ -1,0 +1,19 @@
+<view class="header">{{header_title}}</view>
+<scroll-view class='page-body' scroll-y ="true">
+<navigator src='../detail/detail' wx:for="{{dataList}}">
+<view class='item'>
+<image src='{{item.images.large}}' class='poster' mode="aspectFill"></image>
+<view class='meta'>
+    <text class='title'>{{item.title}}</text>
+    <text class='subtitle'>{{item.original_title}}({{item.year}})    </text>
+    <text class='artists'>
+    <!-- wx:for-item="director-item"-->
+    <text wx:for="{{item.directors}}">{{item.name}}</text>
+    </text>
+</view>
+<view class='rating'>
+    <text>{{item.rating.average}}</text>
+</view>
+</view>
+</navigator>
+</scroll-view>
